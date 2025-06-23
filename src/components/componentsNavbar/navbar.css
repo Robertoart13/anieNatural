@@ -1,0 +1,58 @@
+.contacto-wa{
+    font-family: 'Montserrat-Regular' !important;
+    font-size: 1.2rem !important;
+    color: #000 !important;
+}
+
+.btn-wa{
+    font-family: 'Montserrat-Regular' !important;
+    font-size: 1.2rem !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    padding: 0.5% 1% !important;
+    border-radius: 5px !important;
+    text-decoration: none !important;
+}   
+.btn-wa:hover{
+    background-color: #eda692 !important;
+    cursor: pointer !important;
+}
+
+.titulo-nav{
+    font-family: 'Montserrat-Regular' !important;
+    font-size: 1.1rem !important;
+    color: #000 !important;
+}   
+
+.nav-link{
+    font-family: 'Montserrat-Regular' !important;
+    font-size: 1.2rem !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    height: 100% !important;
+}  
+
+.active{
+    font-family: 'Montserrat-Bold' !important;
+    border-bottom: 2px solid #000 !important;
+    padding-bottom: 0.5% !important;
+    height: 100% !important;
+}
+
+.nav-linkSub{
+    font-family: 'Montserrat-Regular' !important;
+    font-size: 1rem !important;
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+@media (max-width: 600px) {
+    .contacto-wa{
+        font-size: 1rem !important;
+    }
+    .btn-wa{
+        font-size: 1rem !important;
+        padding: 2% 2% !important;
+    }
+    
+}
