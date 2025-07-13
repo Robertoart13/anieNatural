@@ -1,13 +1,14 @@
 {
     "en": {
       "type" : "en",
-      "buttonText": "/images/spanish.svg"
-   
-     },
+      "buttonText" : "ES"
+     
+    
+  },
+
     "es": {
       "type" : "es",
-      "buttonText": "/images/Ingles.svg"
-    
-   
+      "buttonText" : "ENG"
+  
     }
   }

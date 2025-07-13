@@ -4,7 +4,7 @@ import translation from '../store/translation.json';
 export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('es'); // Por defecto en inglés
+  const [language, setLanguage] = useState('es'); // Por defecto en español
 
   const toggleLanguage = () => {
     setLanguage((prevLanguage) => (prevLanguage === 'es' ? 'en' : 'es'));
@@ -16,3 +16,10 @@ export const LanguageProvider = ({ children }) => {
     </LanguageContext.Provider>
   );
 };
+
+// const { translation, toggleLanguage } = useContext(LanguageContext);
+
+  
+{/* <Button className='btnTranslate' onClick={toggleLanguage}>
+<img src={translation.buttonText} style={{width:"69%"}} alt='language'/>
+</Button> */}

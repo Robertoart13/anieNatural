@@ -5,11 +5,10 @@ import { BrowserRouter } from 'react-router-dom'
 import { LanguageProvider } from './components/LanguageProvider.jsx'
 
 
-
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <LanguageProvider>
+  <LanguageProvider>
       <App />
     </LanguageProvider>
-  </BrowserRouter>
+    </BrowserRouter>
 )

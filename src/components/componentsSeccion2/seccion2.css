@@ -1,0 +1,31 @@
+.title2{
+    font-family: 'Alice-Regular' !important;
+    font-size: 3rem !important;
+    color: #5d6939 !important;
+    text-align: left !important;
+}
+
+.subtitle2{
+    font-family: 'Quicksand-VariableFont_wght' !important;
+    font-size: 1.5rem !important;
+    color: #5d6939 !important;
+    text-align: left !important;
+    font-weight: 400 !important;
+}       
+.seccion2-img{
+    width: 20%;
+    height: auto;
+    border-radius: 15% !important;
+}
+
+@media (max-width: 600px) {
+    .title2{
+        font-size: 1rem !important;
+    }
+    .subtitle2{
+        font-size: 0.5rem !important;
+    }
+    .seccion2-img{
+        width: 40% !important;
+    }
+}
