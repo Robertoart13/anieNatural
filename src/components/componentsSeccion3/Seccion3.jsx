@@ -11,7 +11,7 @@ const servicios = [
         title: "Cosmética Natural",
         description: "La belleza auténtica comienza con productos que respetan y nutren tu cuerpo y tu espíritu",
         image: "/images/cosmetica.png",
-        url: "/cosmetica-natural",
+        url: "/productos/cosmetica-natural",
         type: "dark",
         color: "#e9ecd9",
         flecha: "/images/flecha2.png"

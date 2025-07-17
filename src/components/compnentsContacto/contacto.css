@@ -1,0 +1,122 @@
+.subtitle-contacto{
+    font-family: 'Alice-Regular' !important;
+    font-size: 2rem !important;
+    color: #fff !important;
+    text-align: center !important;
+    font-weight: 400 !important;
+    border: 1px solid #eaa692 !important;
+    padding: 10px 32px !important;
+    border-radius: 20px !important;
+    margin-top: 1.5rem !important;
+    background-color: #eaa692 !important;
+}
+ 
+
+
+.text-center-contacto{
+    font-family: 'Quicksand-VariableFont_wght' !important;
+    font-size: 1.5rem !important;
+    color: #ffffff !important;
+    text-align: center !important;
+    width: 50% !important;
+}
+
+.logo-contacto{
+    width: 40% !important;
+}
+
+
+.hoja-esquina-der-contacto {
+    position: absolute;
+    right: -6%;
+    margin-top: -10%;
+    width: 20%;
+    height: auto;
+    z-index: 2;
+    transform: rotate(100deg);
+}
+
+.hoja-esquina-izq-contacto {
+    position: absolute;
+    left: -8%;
+    bottom: 0;
+    width: 15%;
+    height: auto;
+    z-index: 1;
+}
+
+.title-contacto{
+    font-family: 'Alice-Regular' !important;
+    font-size: 2.3rem !important;
+    color: #5d6939 !important;
+}
+
+.detalle-contacto{
+    font-family: 'Quicksand-VariableFont_wght' !important;
+    font-size: 1.9rem !important;
+    color: #5d6939 !important;
+}
+
+.accion-contacto{
+    font-family: 'Alice-Regular' !important;
+    font-size: 2.3rem !important;
+    color: #5d6939 !important;
+    font-weight: 400 !important;
+    border: 1px solid #5d6939 !important;
+    padding: 5px 20px !important;
+    border-radius: 20px !important;
+    text-align: center !important;
+    width: 60% !important;
+}
+
+.narrow{
+    width: 50% !important;
+    font-weight: 400 !important;
+}
+
+@media (max-width: 600px) {
+  
+    .subtitle-contacto{
+        font-size: 1.5rem !important;
+        padding: 5px 16px !important;
+        margin-top: 0.5rem !important;
+    }
+
+    .text-center-contacto{
+        font-size: 0.8rem !important;
+        width: 90% !important;
+    }
+    .hoja-esquina-der-contacto{
+        width: 50% !important;
+        right: -15% !important;
+        margin-top: -20% !important;
+        display: none !important;
+    }
+    .logo-contacto{
+        width: 50% !important;
+    }   
+    .title-contacto{
+        font-size: 1.2rem !important;
+    }
+    .detalle-contacto{
+        font-size: 1rem !important;
+    }
+    .accion-contacto{
+        font-size: 1rem !important;
+        padding: 5px 10px !important;
+        width: 92% !important;
+    }
+    .narrow{
+        font-size: 0.8rem !important;
+        width: 100% !important;
+    }
+
+    .hoja-esquina-izq-contacto {
+        left: -10% !important;
+        bottom: -45% !important;
+        width: 30% !important;
+    }
+    
+   
+   
+}

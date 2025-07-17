@@ -6,7 +6,7 @@
     font-weight: 400 !important;
 }
 
-.subtitle{
+.subtitle-home{
     font-family: 'Alice-Regular' !important;
     font-size: 2rem !important;
     color: #5d6939 !important;
@@ -52,7 +52,7 @@
     .title{
         font-size: 5rem !important;
     }
-    .subtitle{
+    .subtitle-home{
         font-size: 1.5rem !important;
         padding: 5px 16px !important;
         margin-top: 0.5rem !important;

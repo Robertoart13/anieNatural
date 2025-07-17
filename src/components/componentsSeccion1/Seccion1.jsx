@@ -11,9 +11,9 @@ export const Seccion1 = () => {
       {/* Imagen hoja esquina superior derecha */}
       <img src="/images/hoja2.png" alt="hoja derecha" className="hoja-esquina-der" />
 
-      <img src="/images/logo.png" alt="logo" className='logo' />
+      <img src="/images/Logo.png" alt="logo" className='logo' />
 
-      <Typography variant="h2" className='subtitle'>Un espacio de bienestar</Typography>
+      <Typography variant="h2" className='subtitle-home'>Un espacio de bienestar</Typography>
     </Stack>
   )
 }

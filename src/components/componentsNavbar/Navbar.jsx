@@ -1,9 +1,25 @@
 import { Stack, Typography, useMediaQuery } from '@mui/material'
-import React from 'react'
 import './navbar.css'
+import { Link, useLocation } from 'react-router-dom'
 
 export const Navbar = () => {
   const isMobile = useMediaQuery('(max-width: 600px)');
+  const location = useLocation();
+
+  // Función para determinar si un enlace está activo
+  const isActive = (path) => {
+    if (path === "/") {
+      return location.pathname === "/";
+    }
+    return location.pathname.startsWith(path);
+  };
+
+  // Función para obtener la clase CSS dinámicamente
+  const getNavClass = (path) => {
+    return `nav-text ${isActive(path) ? 'active' : ''}`;
+  };
+
+
   return (
     <div style={{ background: 'transparent', padding: '16px 0', width: isMobile ? '100%' : '100vw', position:"fixed", zIndex:1000}}>
       <Stack direction="row" justifyContent="center" alignItems="center">
@@ -20,11 +36,11 @@ export const Navbar = () => {
             </Stack>
           
           <Stack direction="row" spacing={isMobile ? 1.5 : 4} alignItems="center" >
-            <Typography variant="h6" className='nav-text active'>Inicio</Typography>
-            <Typography variant="h6" className='nav-text'>Servicios</Typography>
-            <Typography variant="h6" className='nav-text'>Productos</Typography>
-            <Typography variant="h6" className='nav-text'>Capacitaciones</Typography>
-            <Typography variant="h6" className='nav-text'>Contacto</Typography>
+            <Link to="/" className={getNavClass('/')}>Inicio</Link>
+            <Link to="/servicios" className={getNavClass('/servicios')}>Servicios</Link>
+            <Link to="/productos" className={getNavClass('/productos')}>Productos</Link>
+            <Link to="/capacitaciones" className={getNavClass('/capacitaciones')}>Capacitaciones</Link>
+            <Link to="/contacto" className={getNavClass('/contacto')}>Contacto</Link>
           </Stack>
         </Stack>
       </Stack>
