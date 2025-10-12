@@ -5,11 +5,29 @@ import PropTypes from "prop-types"
 import { useEffect } from "react";
 
 
-const ProductItem = ({ productoData }) => {
+const ProductItem = ({ productoData, getImageUrl }) => {
     const isMobile = useMediaQuery('(max-width: 600px)');
     const isTablet = useMediaQuery("(min-width: 601px) and (max-width: 1024px)");
 
- 
+    const handlePedirInformacion = () => {
+        const imageUrl = getImageUrl(productoData.imagen);
+        const mensaje = `🛍️ *SOLICITUD DE INFORMACIÓN - ANIE NATURAL* 🛍️
+
+*Producto:* ${productoData.nombre}
+*Descripción:* ${productoData.descripcion}
+*Precio:* ₡${productoData.precio}
+*Cantidad:* ${productoData.cantidad}
+
+Hola! Me interesa obtener más información sobre este producto. ¿Podrían ayudarme con detalles adicionales, disponibilidad y formas de pago?
+
+¡Gracias! 🌿
+
+${imageUrl}`;
+        
+        const numeroWhatsApp = "50687515938";
+        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+        window.open(urlWhatsApp, '_blank');
+    };
 
     return (
       <Stack style={{ width:isMobile || isTablet ? "100%" : "250px", height: "400px" }} spacing={2}>
@@ -43,7 +61,7 @@ const ProductItem = ({ productoData }) => {
 
           
         </Stack>
-        <Button className="btn-add-cart">Agregar al carrito</Button>
+        <Button className="btn-add-cart" onClick={handlePedirInformacion}>Pedir más información</Button>
       </Stack>
     );
   };
@@ -56,6 +74,15 @@ const ProductoIndividual = ({pId}) => {
 
     const isMobile = useMediaQuery('(max-width: 600px)');
     const isTablet = useMediaQuery("(min-width: 601px) and (max-width: 1024px)");
+    
+    // Función para convertir rutas relativas a URLs completas
+    const getImageUrl = (relativePath) => {
+        const imageNumber = relativePath.match(/(\d+)\.jpg$/)?.[1];
+        if (imageNumber) {
+            return `https://lightcyan-barracuda-666320.hostingersite.com/${imageNumber}.jpg`;
+        }
+        return relativePath;
+    };
     const detallesProductos = [
         {
             id: 1,
@@ -291,7 +318,7 @@ const ProductoIndividual = ({pId}) => {
              <Grid container spacing={isMobile || isTablet ? 1 : 1} justifyContent="center" sx={{ width: "100%", paddingBottom:"2%", marginLeft:"0%" }}>
                {categoria.items.map((item) => (
                  <Grid justifyContent="center" alignItems="center" item xs={6} sm={6} md={3} key={item.id+categoria.id} style={{display: "flex"}}>
-                   <ProductItem productoData={item} />
+                   <ProductItem productoData={item} getImageUrl={getImageUrl} />
                  </Grid>
                ))}
              </Grid>
@@ -315,7 +342,8 @@ ProductItem.propTypes = {
     descripcion: PropTypes.string.isRequired,
     cantidad: PropTypes.string.isRequired,
     precio: PropTypes.string.isRequired,
-  }).isRequired
+  }).isRequired,
+  getImageUrl: PropTypes.func.isRequired
 }
 
 export default ProductoIndividual
