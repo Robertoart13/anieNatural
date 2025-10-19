@@ -30,38 +30,43 @@ ${imageUrl}`;
     };
 
     return (
-      <Stack style={{ width:isMobile || isTablet ? "100%" : "250px", height: "400px" }} spacing={2}>
+      <Stack direction="row" spacing={3} style={{ width: "100%", minHeight: "300px", padding: "20px", backgroundColor: "#f5f5f5", borderRadius: "10px" }}>
+        {/* Imagen a la izquierda */}
         <Box
           style={{
-            width: "100%",
+            width: "200px",
             height: "250px",
             backgroundImage: `url(${productoData.imagen})`,
             backgroundSize: "contain",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
+            flexShrink: 0
           }}
         />
-        {/* <img src={productoData.imagen} alt={productoData.nombre} /> */}
-        <Stack>
-          <Typography className="title-productos">
-            {productoData.nombre}
-          </Typography>
-          <Typography className="text-productos">
-            {productoData.descripcion}
-          </Typography>
-          <Typography className="text-productos">
-            {productoData.cantidad}
-          </Typography>
-          <Stack direction="row" spacing={1} alignItems="center">
-            <Typography className="text-productos">PRECIO:</Typography>
-            <Typography className="price-productos">
-              ₡{productoData.precio}
+        
+        {/* Contenido a la derecha */}
+        <Stack style={{ flex: 1, justifyContent: "space-between" }}>
+          <Stack spacing={2}>
+            <Typography className="title-productos">
+              {productoData.nombre}
             </Typography>
+            <Typography className="text-productos-horizontal">
+              {productoData.descripcion}
+            </Typography>
+            <Typography className="text-productos">
+              {productoData.cantidad}
+            </Typography>
+            <Stack direction="row" spacing={1} alignItems="center">
+              <Typography className="text-productos">PRECIO:</Typography>
+              <Typography className="price-productos">
+                ₡{productoData.precio}
+              </Typography>
+            </Stack>
           </Stack>
-
-          
+          <Button className="btn-add-cart" onClick={handlePedirInformacion} style={{ alignSelf: "flex-start", marginTop: "10px" }}>
+            Pedir más información
+          </Button>
         </Stack>
-        <Button className="btn-add-cart" onClick={handlePedirInformacion}>Pedir más información</Button>
       </Stack>
     );
   };
@@ -79,7 +84,7 @@ const ProductoIndividual = ({pId}) => {
     const getImageUrl = (relativePath) => {
         const imageNumber = relativePath.match(/(\d+)\.jpg$/)?.[1];
         if (imageNumber) {
-            return `https://lightcyan-barracuda-666320.hostingersite.com/${imageNumber}.jpg`;
+            return `https://anienatural.com/${imageNumber}.jpg`;
         }
         return relativePath;
     };
@@ -99,27 +104,36 @@ const ProductoIndividual = ({pId}) => {
                     items: [
                         {
                             id: 1,
-                            nombre: "Producto 1",
-                            descripcion: "Descripción del producto 1",
-                            precio: "1.000",
-                            imagen: "/images/products/1.jpg",
-                            cantidad: "100 ml",
+                            nombre: "CremaDolores Musculares",
+                            descripcion: `Diseñada para reducir dolores, con un olor
+                                    agradable. Tiene aceites esenciales y flores que
+                                    ayudan a enfrentar las heridas emocionales.
+                                    Posee aceites como el tanaceto azul, alcanfor,
+                                    hierbabuena, helicriso y otros. Posee flores como
+                                    gavilana y majagua. Es de rápida absorción y
+                                    con características antiiflamatorias. Calma
+                                    irritaciones de la piel, rica en vitaminas A, B y E,
+                                    minerales antioxidantes, hidrata y nutre la piel.
+                                    `,
+                            precio: "7.000",
+                            imagen: "/images/products/53.jpg",
+                            cantidad: "",
                           },
                           {
                             id: 2,
-                            nombre: "Producto 2",
-                            descripcion: "Descripción del producto 2",
-                            precio: "2.000",
-                            imagen: "/images/products/2.jpg",
-                            cantidad: "100 ml",
-                          },
-                          {
-                            id: 3,
-                            nombre: "Producto 3",
-                            descripcion: "Descripción del producto 3",
-                            precio: "3.000",
-                            imagen: "/images/products/3.jpg",
-                            cantidad: "100 ml",
+                            nombre: "Crema Várices",
+                            descripcion: `Contiene aceites esenciales y flores que promueven el
+                                      movimiento y el flujo de energía, ayudando a fluir en la
+                                      vida. Cuenta con ciprés que genera un flujo energético,
+                                      generando flexibilidad. También posee menta, mejorana
+                                      y otros que nos ayudan a relajarnos, calmarnos y liberar
+                                      la tensión física. Con características antiinflamatorias, es
+                                      de rápida absorción, calma irritaciones de la piel, rica en
+                                      vitaminas A, B y E y minerales antioxidantes. Hidrata y
+                                      nutre la piel, dejándola lisa.`,
+                            precio: "7.000",
+                            imagen: "/images/products/54.jpg",
+                            cantidad: "",
                           },
                         ]
                   },
@@ -199,32 +213,92 @@ const ProductoIndividual = ({pId}) => {
             categorias: [
                 {
                     id: 1,
-                    nombre: "LÍNEA TERAPIA FLORAL",
+                    nombre: "LÍNEA FLOREZCO",
                     clase: "ixchel",
                     items: [
                         {
                             id: 1,
-                            nombre: "Producto 1",
-                            descripcion: "Descripción del producto 1",
-                            precio: "1.000",
+                            nombre: "Tónico Facial",
+                            descripcion: `Tiene el poder que impregna la rosa y/o la lavanda,
+                                          dependiendo de la presentación a elegir. Es una loción
+                                          fundamental para el cuidado del cutis, ya que ayuda a
+                                          reestablecer el pH del rostro después de haber sido
+                                          sometido a la limpieza. Aporta hidratación y ayuda a
+                                          quitar impurezas y celulas muertas. Prepara la piel para
+                                          absorber el resto de productos de manera más eficaz.`,
+                            precio: "6.000",
                             imagen: "/images/products/1.jpg",
-                            cantidad: "100 ml",
+                            cantidad: "",
                           },
                           {
                             id: 2,
-                            nombre: "Producto 2",
-                            descripcion: "Descripción del producto 2",
-                            precio: "2.000",
-                            imagen: "/images/products/2.jpg",
+                            nombre: "Crema Corporal",
+                            descripcion: `Diseñada para poder vivir en paz,
+                                          brindando confianza, seguridad y
+                                          amor. Posee características
+                                          antiinflamatorias, es de rápida
+                                          absorción, calma irritaciones de
+                                          la piel. Rica en vitaminas A, B y E
+                                          y minerales antioxidantes.
+                                          Hidrata y nutre la piel, dejándola
+                                          lisa y regenera tejido.
+                                          `,
+                            precio: "7.000",
+                            imagen: "/images/products/35.jpg",
                             cantidad: "100 ml",
                           },
                           {
                             id: 3,
-                            nombre: "Producto 3",
-                            descripcion: "Descripción del producto 3",
-                            precio: "3.000",
-                            imagen: "/images/products/3.jpg",
+                            nombre: "Crema Facial iluminadora",
+                            descripcion: `Posee el poder de las almendras,
+                              jojoba y rosa moqueta, entre
+                              otros aceites, así como las flores
+                              mimosa, rosa roja y dalia. Posee
+                              vitamina E y colágeno. Es una
+                              crema que humecta, da suavidad
+                              y nutre la piel. Posee aceites
+                              esenciales que ayudan a reducir
+                              cicatrices y líneas de expresión.
+                              `,
+                            precio: "5.000",
+                            imagen: "/images/products/20.jpg",
                             cantidad: "100 ml",
+                          },
+                          {
+                            id: 3,
+                            nombre: "Contorno de ojos",
+                            descripcion: `Posee un aceite regenerador
+                                celular para la piel. Ideal en la
+                                zona del contorno de ojos. Posee
+                                vitamina E y colágeno. Es una
+                                crema que hidrata, da suavidad y
+                                nutre la piel. Posee aceites
+                                esenciales que ayuda a reducir
+                                cicatrices y líneas de expresión,
+                                brindando claridad y luminosidad
+                                al rostro.
+                              `,
+                            precio: "3.000",
+                            imagen: "/images/products/36.jpg",
+                            cantidad: "",
+                          },
+                          {
+                            id: 3,
+                            nombre: "Crema Facial Noche",
+                            descripcion: `Es una crema antimanchas que
+                                        posee más de 20 aceites
+                                        esenciales como manzano
+                                        silvestre, bella de noche y otras.
+                                        Posee el poder de la caléndula,
+                                        almendras, jojoba y rosa moqueta.
+                                        Tiene vitamina E y colágeno. Es
+                                        una crema que hidrata, da
+                                        suavidad y nutre la piel.
+                                        .
+                              `,
+                            precio: "5.000",
+                            imagen: "/images/products/25.jpg",
+                            cantidad: "",
                           },
                         ]
                   },
@@ -315,9 +389,9 @@ const ProductoIndividual = ({pId}) => {
          <Stack key={categoria.id} justifyContent="center" alignItems="center" spacing={5} style={{width: "100%"}}>
            <Typography variant="h2" className={`${categoria.clase}`}>{categoria.nombre}</Typography>
            <Stack style={{width: "90%"}}>
-             <Grid container spacing={isMobile || isTablet ? 1 : 1} justifyContent="center" sx={{ width: "100%", paddingBottom:"2%", marginLeft:"0%" }}>
+             <Grid container spacing={isMobile || isTablet ? 2 : 3} justifyContent="center" sx={{ width: "100%", paddingBottom:"2%", marginLeft:"0%" }}>
                {categoria.items.map((item) => (
-                 <Grid justifyContent="center" alignItems="center" item xs={6} sm={6} md={3} key={item.id+categoria.id} style={{display: "flex"}}>
+                 <Grid justifyContent="center" alignItems="center" item xs={12} sm={12} md={6} lg={4} key={item.id+categoria.id} style={{display: "flex"}}>
                    <ProductItem productoData={item} getImageUrl={getImageUrl} />
                  </Grid>
                ))}

@@ -69,6 +69,14 @@
     font-size: 1rem !important;
     color: #000 !important;
 }
+
+.text-productos-horizontal{
+    font-family: 'Quicksand-VariableFont_wght' !important;
+    font-size: 1rem !important;
+    color: #000 !important;
+    line-height: 1.5 !important;
+    text-align: justify !important;
+}
 .price-productos{
     font-family: 'Quicksand-VariableFont_wght' !important;
     font-size: 1.2rem !important;
