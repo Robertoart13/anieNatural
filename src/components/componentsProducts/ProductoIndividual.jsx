@@ -157,7 +157,7 @@ const ProductoIndividual = ({pId}) => {
                                     `,
                             precio: "11.000",
                             imagen: "/images/products/1.jpg",
-                            cantidad: "100 ml",
+                            
                           },
                           {
                             id: 2,
@@ -174,7 +174,7 @@ const ProductoIndividual = ({pId}) => {
                                     `,
                             precio: "6.000",
                             imagen: "/images/products/2.jpg",
-                            cantidad: "100 ml",
+                            
                           },
                           {
                             id: 3,
@@ -190,7 +190,7 @@ const ProductoIndividual = ({pId}) => {
                                     `,
                             precio: "12.000",
                             imagen: "/images/products/7.jpg",
-                            cantidad: "100 ml",
+                            
                           },
                         ]
                   },
@@ -201,27 +201,34 @@ const ProductoIndividual = ({pId}) => {
                     items: [
                         {
                             id: 1,
-                            nombre: "Producto 1",   
-                            descripcion: "Descripción del producto 1",
-                            precio: "1.000",
-                            imagen: "/images/products/1.jpg",
-                            cantidad: "100 ml",
+                            nombre: "Jabón espuma",   
+                            descripcion: `Aurora es la diosa del amanecer,
+                                    nos recuerda que en el despertar
+                                    de la vida debemos aceptarnos, de
+                                    esta forma, los productos ayudan
+                                    en la eliminación de espinillas y
+                                    barros. Son diseñados para
+                                    adolescentes.
+                                    `,
+                            precio: "5.000",
+                            imagen: "/images/products/13.jpg",
+                            
                           },
                           {
                             id: 2,
-                            nombre: "Producto 2",
-                            descripcion: "Descripción del producto 2",  
-                            precio: "2.000",
-                            imagen: "/images/products/2.jpg",
-                            cantidad: "100 ml",
+                            nombre: "Tónico facial",
+                            descripcion: "",  
+                            precio: "6.000",
+                            imagen: "/images/products/10.jpg",
+                            
                           },
                           {
                             id: 3,  
-                            nombre: "Producto 3",
-                            descripcion: "Descripción del producto 3",
-                            precio: "3.000",
-                            imagen: "/images/products/3.jpg",
-                            cantidad: "100 ml",
+                            nombre: "Crema facial",
+                            descripcion: "",
+                            precio: "5.000",
+                            imagen: "/images/products/19.jpg",
+                            
                           },
                         ]
                   },
@@ -271,7 +278,7 @@ const ProductoIndividual = ({pId}) => {
                                           `,
                             precio: "7.000",
                             imagen: "/images/products/35.jpg",
-                            cantidad: "100 ml",
+                            
                           },
                           {
                             id: 3,
@@ -288,7 +295,7 @@ const ProductoIndividual = ({pId}) => {
                               `,
                             precio: "5.000",
                             imagen: "/images/products/20.jpg",
-                            cantidad: "100 ml",
+                            
                           },
                           {
                             id: 3,
@@ -351,7 +358,7 @@ const ProductoIndividual = ({pId}) => {
                             descripcion: "Descripción del producto 1",
                             precio: "1.000",
                             imagen: "/images/products/1.jpg",
-                            cantidad: "100 ml",
+                            
                           },
                           {
                             id: 2,
@@ -359,7 +366,7 @@ const ProductoIndividual = ({pId}) => {
                             descripcion: "Descripción del producto 2",
                             precio: "2.000",
                             imagen: "/images/products/2.jpg",
-                            cantidad: "100 ml",
+                            
                           },
                           {
                             id: 3,
@@ -367,7 +374,7 @@ const ProductoIndividual = ({pId}) => {
                             descripcion: "Descripción del producto 3",
                             precio: "3.000",
                             imagen: "/images/products/3.jpg",
-                            cantidad: "100 ml",
+                            
                           },
                         ]
                   },
