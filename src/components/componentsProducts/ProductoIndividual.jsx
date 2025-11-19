@@ -30,12 +30,24 @@ ${imageUrl}`;
     };
 
     return (
-      <Stack direction="row" spacing={3} style={{ width: "100%", minHeight: "300px", padding: "20px", backgroundColor: "#f5f5f5", borderRadius: "10px" }}>
-        {/* Imagen a la izquierda */}
+      <Stack 
+        direction={isMobile ? "column" : "row"} 
+        spacing={isMobile ? 2 : 3} 
+        style={{ 
+          width: "100%", 
+          minHeight: isMobile ? "auto" : "300px", 
+          padding: isMobile ? "15px" : "20px", 
+          backgroundColor: "#f5f5f5", 
+          borderRadius: "10px" 
+        }}
+      >
+        {/* Imagen */}
         <Box
           style={{
-            width: "200px",
-            height: "250px",
+            width: isMobile ? "100%" : "200px",
+            height: isMobile ? "200px" : "250px",
+            maxWidth: isMobile ? "300px" : "200px",
+            margin: isMobile ? "0 auto" : "0",
             backgroundImage: `url(${productoData.imagen})`,
             backgroundSize: "contain",
             backgroundPosition: "center",
@@ -44,8 +56,8 @@ ${imageUrl}`;
           }}
         />
         
-        {/* Contenido a la derecha */}
-        <Stack style={{ flex: 1, justifyContent: "space-between" }}>
+        {/* Contenido */}
+        <Stack style={{ flex: 1, justifyContent: "space-between", width: "100%" }}>
           <Stack spacing={2}>
             <Typography className="title-productos">
               {productoData.nombre}
@@ -53,9 +65,11 @@ ${imageUrl}`;
             <Typography className="text-productos-horizontal">
               {productoData.descripcion}
             </Typography>
-            <Typography className="text-productos">
-              {productoData.cantidad}
-            </Typography>
+            {productoData.cantidad && (
+              <Typography className="text-productos">
+                {productoData.cantidad}
+              </Typography>
+            )}
             <Stack direction="row" spacing={1} alignItems="center">
               <Typography className="text-productos">PRECIO:</Typography>
               <Typography className="price-productos">
@@ -63,7 +77,7 @@ ${imageUrl}`;
               </Typography>
             </Stack>
           </Stack>
-          <Button className="btn-add-cart" onClick={handlePedirInformacion} style={{ alignSelf: "flex-start", marginTop: "10px" }}>
+          <Button className="btn-add-cart" onClick={handlePedirInformacion} style={{ alignSelf: isMobile ? "stretch" : "flex-start", marginTop: "10px" }}>
             Pedir más información
           </Button>
         </Stack>

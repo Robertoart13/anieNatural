@@ -191,11 +191,16 @@
     .text-productos{
         font-size: 0.8rem !important;
     }
+    .text-productos-horizontal{
+        font-size: 0.85rem !important;
+        line-height: 1.4 !important;
+    }
     .price-productos{
         font-size: 0.9rem !important;
     }
     .btn-add-cart{
         font-size: 0.8rem !important;
+        padding: 8px 16px !important;
     }
     .text-center-producto{
         width: 80% !important;
@@ -211,6 +216,15 @@
         font-size: 1.5rem !important;
     }
     .aurora{    
+        font-size: 1.5rem !important;
+    }
+    .abundantia{
+        font-size: 1.5rem !important;
+    }
+    .afrodita{
+        font-size: 1.5rem !important;
+    }
+    .sige{
         font-size: 1.5rem !important;
     }
 }
