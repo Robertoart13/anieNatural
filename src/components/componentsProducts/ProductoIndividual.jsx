@@ -16,7 +16,7 @@ const ProductItem = ({ productoData, getImageUrl }) => {
 *Producto:* ${productoData.nombre}
 *Descripción:* ${productoData.descripcion}
 *Precio:* ₡${productoData.precio}
-*Cantidad:* ${productoData.cantidad}
+*Cantidad:* ${productoData.cantidad || ""}
 
 Hola! Me interesa obtener más información sobre este producto. ¿Podrían ayudarme con detalles adicionales, disponibilidad y formas de pago?
 

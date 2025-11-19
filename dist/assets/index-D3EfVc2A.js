@@ -132,7 +132,7 @@ Please change the parent <Route path="${h}"> to <Route path="${h==="/"?"*":`${h}
 *Producto:* ${e.nombre}
 *Descripción:* ${e.descripcion}
 *Precio:* ₡${e.precio}
-*Cantidad:* ${e.cantidad}
+*Cantidad:* ${e.cantidad||""}
 
 Hola! Me interesa obtener más información sobre este producto. ¿Podrían ayudarme con detalles adicionales, disponibilidad y formas de pago?
 
