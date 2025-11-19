@@ -24,7 +24,7 @@ Hola! Me interesa obtener más información sobre este producto. ¿Podrían ayud
 
 ${imageUrl}`;
         
-        const numeroWhatsApp = "50687515938";
+        const numeroWhatsApp = "50687549222";
         const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
         window.open(urlWhatsApp, '_blank');
     };
