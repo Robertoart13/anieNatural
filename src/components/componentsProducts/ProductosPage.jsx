@@ -22,24 +22,24 @@ const ProductosPage = () => {
             color: "#e9ecd9",
             flecha: "/images/flecha2.png"
         },
-        {
-            id: 2,
-            title: "Terapia floral",
-            description: "Equilibra tus emociones con nuestras mezclas personalizadas de Flores de Bach, flores de Australia, Flores de California y desde luego flores de Costa Rica, ideales para enfrentar los desafíos emocionales diarios.",
-            url: "/productos/terapia-floral",
-            type: "light",
-            color: "#eaa692",
-            flecha: "/images/flecha.png"
-        },
-        {
-            id: 3,
-            title: "Aceites esenciales",
-            description: "Revitaliza tus sentidos con nuestros aceites esenciales puros, perfectos para aromaterapia y cuidado personal. Además, explora nuestras Mezclas exclusivas de aceites esenciales, formuladas para potenciar tus rituales de autocuidado y armonizar tu espacio.",
-            url: "/productos/aceites-esenciales",
-            type: "light",
-            color: "#687658",
-            flecha: "/images/flecha2.png"
-        }
+        // {
+        //     id: 2,
+        //     title: "Terapia floral",
+        //     description: "Equilibra tus emociones con nuestras mezclas personalizadas de Flores de Bach, flores de Australia, Flores de California y desde luego flores de Costa Rica, ideales para enfrentar los desafíos emocionales diarios.",
+        //     url: "/productos/terapia-floral",
+        //     type: "light",
+        //     color: "#eaa692",
+        //     flecha: "/images/flecha.png"
+        // },
+        // {
+        //     id: 3,
+        //     title: "Aceites esenciales",
+        //     description: "Revitaliza tus sentidos con nuestros aceites esenciales puros, perfectos para aromaterapia y cuidado personal. Además, explora nuestras Mezclas exclusivas de aceites esenciales, formuladas para potenciar tus rituales de autocuidado y armonizar tu espacio.",
+        //     url: "/productos/aceites-esenciales",
+        //     type: "light",
+        //     color: "#687658",
+        //     flecha: "/images/flecha2.png"
+        // }
     ]
   return (
     <Stack>

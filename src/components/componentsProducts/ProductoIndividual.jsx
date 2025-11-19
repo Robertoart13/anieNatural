@@ -227,25 +227,13 @@ const ProductoIndividual = ({pId}) => {
                             nombre: "Crema facial",
                             descripcion: "",
                             precio: "5.000",
-                            imagen: "/images/products/19.jpg",
+                            imagen: "/images/products/3.jpg",
                             
                           },
                         ]
                   },
-                  
-            ]
-
-        },
-        {
-            id: 2,
-            name: "Terapia Floral",
-            color: "#ffff",
-            text1: "La terapia floral son remedios naturales que ayudan a equilibrar tus emociones y promover un bienestar integral. Nuestras mezclas personalizadas están diseñadas para ayudarte a enfrentar los desafíos emocionales del día a día con serenidad y fortaleza.",
-            text2: "Descubre el poder de las Flores de Bach, Flores de California, Flores de Australia y desde luego Flores de Costa Rica y encuentra el equilibrio emocional que necesitas",
-            text3:"En Anie Natural, entendemos que el equilibrio emocional es fundamental para tu bienestar general. Nuestras esencias florales están diseñadas para ayudarte a armonizar tus emociones, promoviendo un estado de calma, claridad y bienestar interior",
-            categorias: [
-                {
-                    id: 1,
+                  {
+                    id: 2,
                     nombre: "LÍNEA FLOREZCO",
                     clase: "ixchel",
                     items: [
@@ -335,46 +323,55 @@ const ProductoIndividual = ({pId}) => {
                           },
                         ]
                   },
-                  
-            ]
-
-        },
-        {
-            id: 3,
-            name: "Aceites Esenciales",
-            color: "#e9ecd9",
-            text1: "Nuestros aceites esenciales son perfectos para aromaterapia y cuidado personal. Seleccionados por sus propiedades terapéuticas, cada aceite ofrece beneficios para la salud emocional y física, ayudándote a crear un ambiente de bienestar en tu hogar.",
-            text2: "Nuestros aceites esenciales puros y naturales están diseñados para revitalizar tus sentidos, mejorar tu bienestar emocional y transformar tu hogar en un santuario de tranquilidad y equilibrio.",
-            text3:"Son extraídos de las plantas más finas y puras, asegurando que cada gota contenga las propiedades terapéuticas necesarias para mejorar tu bienestar físico y emocional. Ya sea que los utilices para la aromaterapia, masajes, o cuidados personales, nuestros aceites esenciales son una adición perfecta a tu rutina de autocuidado.",
-            categorias: [
-                {
-                    id: 1,
-                    nombre: "LÍNEA ACEITES ESENCIALES",
-                    clase: "ixchel",
+                  {
+                    id: 2,
+                    nombre: "LÍNEA SULIS",
+                    clase: "ixchel_sulis",
                     items: [
                         {
                             id: 1,
-                            nombre: "Producto 1",
-                            descripcion: "Descripción del producto 1",
-                            precio: "1.000",
-                            imagen: "/images/products/1.jpg",
-                            
+                            nombre: "Jabón de Ylang Ylang",
+                            descripcion: `Pasar tiempo cerca del agua ayuda a cargar energía,
+                                          el poder curativo del agua puede lavar penas, dolor
+                                          y efectos negativos del sufrimiento. El poder
+                                          curativo del agua aumenta con la oración e intención
+                                          durante el baño. El agua desintoxica el cuerpo
+                                          energético y físico.
+                                          `,
+                            precio: "3.000",
+                            imagen: "/images/products/100.jpg",
+                            cantidad: "",
                           },
                           {
                             id: 2,
-                            nombre: "Producto 2",
-                            descripcion: "Descripción del producto 2",
-                            precio: "2.000",
-                            imagen: "/images/products/2.jpg",
-                            
+                            nombre: "Exfoliante cremoso",
+                            descripcion: `Las propiedades naturales de la salvia y el
+                                          limoncillo ayudan a limpiar la energía, eliminar
+                                          sentimientos de desánimo, apatía y desesperación,
+                                          remover energía tóxica y negatividad, proporcionar
+                                          claridad, liberar de apegos, y abrirse a nuevas ideas,
+                                          nuevas perspectivas, posibilidades y experiencias.
+                                          `,
+                            precio: "5.000",
+                            imagen: "/images/products/29.jpg",
+                            cantidad: "",
                           },
                           {
                             id: 3,
-                            nombre: "Producto 3",
-                            descripcion: "Descripción del producto 3",
-                            precio: "3.000",
-                            imagen: "/images/products/3.jpg",
-                            
+                            nombre: "Exfoliante de Café y Chocolate",
+                            descripcion: `El cacao tiene la propiedad de abrir el corazón y
+                                          conectar con lo divino. En la piel, ayuda a mejorar
+                                          la elasticidad, reduciendo la apariencia de líneas
+                                          finas y arrugas, y haciendo que la piel se vea más
+                                          uniforme y saludable. El café, por otro lado, tiene
+                                          propiedades anti-envejecimiento, hidrata, firma, es
+                                          antiinflamatorio, actúa contra la celulitis, es fuente
+                                          de antioxidantes, y elimina impurezas y células muertas
+                                          de la piel.
+                                          `,
+                            precio: "5.000",
+                            imagen: "/images/products/28.jpg",
+                            cantidad: "",
                           },
                         ]
                   },
@@ -382,6 +379,30 @@ const ProductoIndividual = ({pId}) => {
             ]
 
         },
+        // {
+        //     id: 2,
+        //     name: "Terapia Floral",
+        //     color: "#ffff",
+        //     text1: "La terapia floral son remedios naturales que ayudan a equilibrar tus emociones y promover un bienestar integral. Nuestras mezclas personalizadas están diseñadas para ayudarte a enfrentar los desafíos emocionales del día a día con serenidad y fortaleza.",
+        //     text2: "Descubre el poder de las Flores de Bach, Flores de California, Flores de Australia y desde luego Flores de Costa Rica y encuentra el equilibrio emocional que necesitas",
+        //     text3:"En Anie Natural, entendemos que el equilibrio emocional es fundamental para tu bienestar general. Nuestras esencias florales están diseñadas para ayudarte a armonizar tus emociones, promoviendo un estado de calma, claridad y bienestar interior",
+        //     categorias: [       
+        //     ]
+
+        // },
+        // {
+        //     id: 3,
+        //     name: "Aceites Esenciales",
+        //     color: "#e9ecd9",
+        //     text1: "Nuestros aceites esenciales son perfectos para aromaterapia y cuidado personal. Seleccionados por sus propiedades terapéuticas, cada aceite ofrece beneficios para la salud emocional y física, ayudándote a crear un ambiente de bienestar en tu hogar.",
+        //     text2: "Nuestros aceites esenciales puros y naturales están diseñados para revitalizar tus sentidos, mejorar tu bienestar emocional y transformar tu hogar en un santuario de tranquilidad y equilibrio.",
+        //     text3:"Son extraídos de las plantas más finas y puras, asegurando que cada gota contenga las propiedades terapéuticas necesarias para mejorar tu bienestar físico y emocional. Ya sea que los utilices para la aromaterapia, masajes, o cuidados personales, nuestros aceites esenciales son una adición perfecta a tu rutina de autocuidado.",
+        //     categorias: [
+                
+                  
+        //     ]
+
+        // },
     ]
    
     const producto = detallesProductos.find(p => p.id === pId);
