@@ -325,52 +325,71 @@ const ProductoIndividual = ({pId}) => {
                   },
                   {
                     id: 2,
-                    nombre: "LÍNEA SULIS",
-                    clase: "ixchel_sulis",
+                    nombre: "LÍNEA ABUNDANTIA",
+                    clase: "abundantia",
                     items: [
                         {
                             id: 1,
-                            nombre: "Jabón de Ylang Ylang",
-                            descripcion: `Pasar tiempo cerca del agua ayuda a cargar energía,
-                                          el poder curativo del agua puede lavar penas, dolor
-                                          y efectos negativos del sufrimiento. El poder
-                                          curativo del agua aumenta con la oración e intención
-                                          durante el baño. El agua desintoxica el cuerpo
-                                          energético y físico.
+                            nombre: "Splash",
+                            descripcion: `Abundantia es la diosa romana y nórdica de la
+                                          prosperidad, el éxito y la abundancia. Ella
+                                          proporciona riqueza, fortuna, suerte, ideas, tiempo
+                                          y otras formas de apoyo.
                                           `,
-                            precio: "3.000",
-                            imagen: "/images/products/100.jpg",
+                            precio: "6.000",
+                            imagen: "/images/products/9.jpg",
+                            cantidad: "",
+                          },
+                        ]
+                  },
+                  {
+                    id: 3,
+                    nombre: "LÍNEA AFRODITA",
+                    clase: "afrodita",
+                    items: [
+                        {
+                            id: 1,
+                            nombre: "Perfumes",
+                            descripcion: `Afrodita es la representante de la energía femenina,
+                                          ayudando a las mujeres a sentirse cómodas con su
+                                          cuerpo y sexualidad, y ayudando a ambos géneros a
+                                          experimentar más pasión y equilibrio en sus relaciones.
+                                          Mezclas para aumentar la abundancia, prosperidad,
+                                          protección, sabiduría, gratitud, alegría, felicidad,
+                                          paz interior, sensualidad, y tanto la divinidad
+                                          femenina como masculina.
+                                          `,
+                            precio: "3.000 - 14.000",
+                            imagen: "/images/products/39.jpg",
+                            cantidad: "",
+                          },
+                        ]
+                  },
+                  {
+                    id: 4,
+                    nombre: "LÍNEA SIGE",
+                    clase: "sige",
+                    items: [
+                        {
+                            id: 1,
+                            nombre: "Crema corporal",
+                            descripcion: `Esta línea contiene crema de frutos rojos y splash
+                                          para armonizar el hogar, proporcionando paz y
+                                          abundancia.
+                                          `,
+                            precio: "7.000",
+                            imagen: "/images/products/43.jpg",
                             cantidad: "",
                           },
                           {
                             id: 2,
-                            nombre: "Exfoliante cremoso",
-                            descripcion: `Las propiedades naturales de la salvia y el
-                                          limoncillo ayudan a limpiar la energía, eliminar
-                                          sentimientos de desánimo, apatía y desesperación,
-                                          remover energía tóxica y negatividad, proporcionar
-                                          claridad, liberar de apegos, y abrirse a nuevas ideas,
-                                          nuevas perspectivas, posibilidades y experiencias.
+                            nombre: "Splash",
+                            descripcion: `Esta línea contiene crema de frutos rojos y splash
+                                          para armonizar el hogar, proporcionando paz y
+                                          abundancia.
                                           `,
-                            precio: "5.000",
-                            imagen: "/images/products/29.jpg",
-                            cantidad: "",
-                          },
-                          {
-                            id: 3,
-                            nombre: "Exfoliante de Café y Chocolate",
-                            descripcion: `El cacao tiene la propiedad de abrir el corazón y
-                                          conectar con lo divino. En la piel, ayuda a mejorar
-                                          la elasticidad, reduciendo la apariencia de líneas
-                                          finas y arrugas, y haciendo que la piel se vea más
-                                          uniforme y saludable. El café, por otro lado, tiene
-                                          propiedades anti-envejecimiento, hidrata, firma, es
-                                          antiinflamatorio, actúa contra la celulitis, es fuente
-                                          de antioxidantes, y elimina impurezas y células muertas
-                                          de la piel.
-                                          `,
-                            precio: "5.000",
-                            imagen: "/images/products/28.jpg",
+                            precio: "6.000",
+                            imagen: "/images/products/43.jpg",
                             cantidad: "",
                           },
                         ]
