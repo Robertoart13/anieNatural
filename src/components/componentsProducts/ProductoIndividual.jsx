@@ -104,7 +104,7 @@ const ProductoIndividual = ({pId}) => {
                     items: [
                         {
                             id: 1,
-                            nombre: "CremaDolores Musculares",
+                            nombre: "Crema Dolores Musculares",
                             descripcion: `Diseñada para reducir dolores, con un olor
                                     agradable. Tiene aceites esenciales y flores que
                                     ayudan a enfrentar las heridas emocionales.
@@ -144,26 +144,52 @@ const ProductoIndividual = ({pId}) => {
                     items: [
                         {
                             id: 1,
-                            nombre: "Producto 1",
-                            descripcion: "Descripción del producto 1",
-                            precio: "1.000",
+                            nombre: "Crema Reafirmante",
+                            descripcion: `Diseñada con aceites esenciales como abeto
+                                    siberiano, Tuya, granada y otros que ayudan a
+                                    mantener el equilibrio corporal, a recuperar la
+                                    confianza con gracia, que nos conecta con la
+                                    perspectiva del paso del tiempo, dándonos
+                                    comodidad. Posee características antiinflamatorias,
+                                    es de rápida absorción, calma irritaciones de la piel,
+                                    rica en vitaminas A, B y E y minerales antioxidantes.
+                                    Hidrata y nutre la piel, dejándola lisa.
+                                    `,
+                            precio: "11.000",
                             imagen: "/images/products/1.jpg",
                             cantidad: "100 ml",
                           },
                           {
                             id: 2,
-                            nombre: "Producto 2",
-                            descripcion: "Descripción del producto 2",
-                            precio: "2.000",
+                            nombre: "Gel Antiestrías y anti celulítis",
+                            descripcion: `Contiene elementos que activan los ácidos
+                                    grasos y los eliminan para mejorar la
+                                    apariencia de la piel. Impulsan la circulación
+                                    sanguínea de la piel y la epidermis. Activan
+                                    la lipolisis que reduce el tamaño y número
+                                    de depósitos de grasa. Promueve la
+                                    desintoxicación de la piel, reafirma y alisa la
+                                    zona a tratar. Tiene acción drenante para
+                                    combatir la retención de líquidos.
+                                    `,
+                            precio: "6.000",
                             imagen: "/images/products/2.jpg",
                             cantidad: "100 ml",
                           },
                           {
                             id: 3,
-                            nombre: "Producto 3",
-                            descripcion: "Descripción del producto 3",
-                            precio: "3.000",
-                            imagen: "/images/products/3.jpg",
+                            nombre: "Serum Facial",
+                            descripcion: `Tiene la ventaja de poseer partículas
+                                    más pequeñas y por lo tanto aumenta la
+                                    concentración de bioelementos y
+                                    principios activos que penetran en capas
+                                    más profundas de la piel, por lo que
+                                    ayuda a controlar las líneas de expresión,
+                                    de manera más profunda, siendo un
+                                    botox natural.
+                                    `,
+                            precio: "12.000",
+                            imagen: "/images/products/7.jpg",
                             cantidad: "100 ml",
                           },
                         ]
