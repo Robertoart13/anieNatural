@@ -211,21 +211,31 @@
     }
     .ixchel{
         font-size: 1.5rem !important;
+        text-align: center !important;
     }
     .inmortal{
         font-size: 1.5rem !important;
+        text-align: center !important;
     }
     .aurora{    
         font-size: 1.5rem !important;
+        text-align: center !important;
     }
     .abundantia{
         font-size: 1.5rem !important;
+        text-align: center !important;
     }
     .afrodita{
         font-size: 1.5rem !important;
+        text-align: center !important;
     }
     .sige{
         font-size: 1.5rem !important;
+        text-align: center !important;
+    }
+    .ixchel_sulis{
+        font-size: 1.5rem !important;
+        text-align: center !important;
     }
 }
 
